@@ -1,0 +1,242 @@
+.grid__full-width .header {
+  margin: auto 150px;
+}
+.grid__full-width .header__slide-bar {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-top: 50px;
+}
+.grid__full-width .header__slide-bar__logo {
+  display: flex;
+  justify-content: center;
+}
+.grid__full-width .header__slide-bar__logo__icon {
+  width: 35px;
+  height: 36px;
+  margin-right: 10px;
+  line-height: 24px;
+}
+.grid__full-width .header__slide-bar__logo__name {
+  width: 105px;
+  height: 24px;
+  font-size: 2rem;
+  position: relative;
+  top: 4px;
+  color: #0B132A;
+}
+.grid__full-width .header__slide-bar__logo__name__name-left {
+  font-weight: 500;
+}
+.grid__full-width .header__slide-bar__logo__name__name-right {
+  font-weight: 700;
+  position: relative;
+  left: -6px;
+}
+.grid__full-width .header__slide-bar__logo:hover {
+  cursor: pointer;
+}
+.grid__full-width .header__slide-bar__content {
+  width: 431px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 19px;
+  font-size: 1.6rem;
+  color: #4F5665;
+  margin-left: 157px;
+  margin-right: 120px;
+}
+.grid__full-width .header__slide-bar__content__about:hover, .grid__full-width .header__slide-bar__content__features:hover, .grid__full-width .header__slide-bar__content__pricing:hover, .grid__full-width .header__slide-bar__content__testimonials:hover, .grid__full-width .header__slide-bar__content__help:hover {
+  cursor: pointer;
+  text-decoration: underline red;
+  position: relative;
+  top: -2px;
+}
+.grid__full-width .header__slide-bar__authentication {
+  width: 273px;
+  justify-content: space-between;
+  display: flex;
+  align-content: center;
+}
+.grid__full-width .header__slide-bar__authentication__sign-in, .grid__full-width .header__slide-bar__authentication__sign-up {
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: transparent;
+}
+.grid__full-width .header__slide-bar__authentication__sign-in {
+  border: none;
+  padding: 13px 30px;
+}
+.grid__full-width .header__slide-bar__authentication__sign-in:hover {
+  border: 2px solid #F53855;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #F53838;
+  color: #FFFFFF;
+}
+.grid__full-width .header__slide-bar__authentication__sign-up {
+  border: 2px solid #F53855;
+  padding: 13px 45px;
+  border-radius: 50px;
+  color: #F53855;
+}
+.grid__full-width .header__slide-bar__authentication__sign-up:hover {
+  cursor: pointer;
+  background-color: #F53838;
+  color: #FFFFFF;
+}
+.grid__full-width .content {
+  margin: 0 84px 0 150px;
+}
+.grid__full-width .content__about {
+  position: relative;
+}
+.grid__full-width .content__about__top-container {
+  display: flex;
+  margin-top: 90px;
+}
+.grid__full-width .content__about__top-container__left-container {
+  margin-right: 20px;
+}
+.grid__full-width .content__about__top-container__left-container__title {
+  font-size: 5rem;
+  line-height: 7rem;
+  color: #0B132A;
+  margin-top: 28px;
+}
+.grid__full-width .content__about__top-container__left-container__title__first-title {
+  font-weight: 500;
+}
+.grid__full-width .content__about__top-container__left-container__title__lasles-title {
+  font-weight: 700;
+}
+.grid__full-width .content__about__top-container__left-container__title__vpn-title {
+  font-weight: 800;
+  position: relative;
+  left: -18px;
+}
+.grid__full-width .content__about__top-container__left-container__describe {
+  height: 60px;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  color: #4F5665;
+}
+.grid__full-width .content__about__top-container__left-container__describe__first-describe {
+  font-weight: 400;
+}
+.grid__full-width .content__about__top-container__left-container__describe__seccond-describe {
+  font-weight: 600;
+}
+.grid__full-width .content__about__top-container__left-container__describe__third-describe {
+  font-weight: 400;
+}
+.grid__full-width .content__about__top-container__left-container__btn {
+  width: 250px;
+  height: 60px;
+  background-color: #F53838;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  line-height: 2.5rem;
+  font-size: 1.6rem;
+  margin-top: 52px;
+  padding: auto;
+  box-shadow: 0 25px 25px #FCCBCB;
+}
+.grid__full-width .content__about__top-container__left-container__btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.grid__full-width .content__about__top-container__img {
+  width: 610px;
+  height: 381px;
+}
+.grid__full-width .content__about__bot-container {
+  display: flex;
+  width: 1140px;
+  height: 200px;
+  justify-content: space-around;
+  border-radius: 10px;
+  margin-top: 105px;
+  align-items: center;
+  box-shadow: 0 50px 15px #F4F4F5;
+}
+.grid__full-width .content__about__bot-container__group-item {
+  display: flex;
+  height: 100px;
+  width: 190px;
+  align-items: center;
+}
+.grid__full-width .content__about__bot-container__group-item__icon {
+  width: 55px;
+  height: 55px;
+  margin-right: 37px;
+}
+.grid__full-width .content__about__bot-container__group-item__group-info {
+  line-height: 30px;
+}
+.grid__full-width .content__about__bot-container__group-item__group-info__number {
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+.grid__full-width .content__about__bot-container__group-item__group-info__title {
+  font-weight: 400;
+  font-size: 2rem;
+}
+.grid__full-width .content__about__bot-container::before {
+  content: "";
+  width: 2px;
+  height: 126px;
+  background-color: #EEEFF2;
+  position: absolute;
+  left: 356px;
+}
+.grid__full-width .content__about__bot-container::after {
+  content: "";
+  width: 2px;
+  height: 126px;
+  background-color: #EEEFF2;
+  position: absolute;
+  left: 776px;
+}
+.grid__full-width .content__features {
+  display: flex;
+  margin-top: 96px;
+}
+.grid__full-width .content__features__img {
+  margin-right: 170px;
+  width: 508px;
+  height: 415px;
+}
+.grid__full-width .content__features__container {
+  margin-top: 70px;
+}
+.grid__full-width .content__features__container__title {
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 50px;
+  width: 382px;
+}
+.grid__full-width .content__features__container__describe {
+  width: 428px;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.grid__full-width .content__features__container__group {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+.grid__full-width .content__features__container__group__icon {
+  margin-right: 12px;
+}
+.grid__full-width .content__features__container__group__feature-name {
+  font-size: 14px;
+}
+.grid__full-width .footer {
+  margin-top: 150px;
+}
+
+/*# sourceMappingURL=style.css.map */
