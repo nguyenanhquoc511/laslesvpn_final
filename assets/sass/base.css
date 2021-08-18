@@ -23,8 +23,6 @@ html {
 
 .grid__full-width {
     width: 1440px;
-    max-width: 1440px;
-    border-right: 1px solid #000; 
 }
 
 .grid__row {
