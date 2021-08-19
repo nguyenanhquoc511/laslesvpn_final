@@ -33,8 +33,8 @@
 }
 .grid__full-width .header__container__slide-bar__logo__name__name-right {
   font-weight: 700;
-  position: relative;
-  left: -6px;
+  position: absolute;
+  left: 56px;
 }
 .grid__full-width .header__container__slide-bar__logo:hover {
   cursor: pointer;
@@ -62,32 +62,40 @@
   display: flex;
   align-content: center;
 }
-.grid__full-width .header__container__slide-bar__authentication__sign-in, .grid__full-width .header__container__slide-bar__authentication__sign-up {
+.grid__full-width .header__container__slide-bar__authentication__group-btn {
+  display: flex;
+}
+.grid__full-width .header__container__slide-bar__authentication__group-btn__sign-in, .grid__full-width .header__container__slide-bar__authentication__group-btn__sign-up {
   font-size: 1.6rem;
   font-weight: 600;
   background-color: transparent;
 }
-.grid__full-width .header__container__slide-bar__authentication__sign-in {
+.grid__full-width .header__container__slide-bar__authentication__group-btn__sign-in {
   border: none;
-  padding: 13px 30px;
-}
-.grid__full-width .header__container__slide-bar__authentication__sign-in:hover {
-  border: 2px solid #F53855;
+  padding: 13px 20px;
+  margin-right: 10px;
+  border: 2px solid transparent;
   border-radius: 50px;
+}
+.grid__full-width .header__container__slide-bar__authentication__group-btn__sign-in:hover {
+  border-color: #F53855;
   cursor: pointer;
   background-color: #F53838;
   color: #FFFFFF;
 }
-.grid__full-width .header__container__slide-bar__authentication__sign-up {
+.grid__full-width .header__container__slide-bar__authentication__group-btn__sign-up {
   border: 2px solid #F53855;
   padding: 13px 45px;
   border-radius: 50px;
   color: #F53855;
 }
-.grid__full-width .header__container__slide-bar__authentication__sign-up:hover {
+.grid__full-width .header__container__slide-bar__authentication__group-btn__sign-up:hover {
   cursor: pointer;
   background-color: #F53838;
   color: #FFFFFF;
+}
+.grid__full-width .header__container__slide-bar__authentication__menu-bars {
+  display: none;
 }
 .grid__full-width .content__about__container {
   margin: 0 84px 0 150px;
@@ -111,6 +119,7 @@
 }
 .grid__full-width .content__about__container__top-container__left-container__title__lasles-title {
   font-weight: 700;
+  position: relative;
 }
 .grid__full-width .content__about__container__top-container__left-container__title__vpn-title {
   font-weight: 800;
@@ -751,6 +760,548 @@
   left: 22px;
   bottom: -1px;
   box-shadow: 0px 30px 25px #FCC8C8;
+}
+
+@media only screen and (max-width: 46.1875em) {
+  .grid__full-width .header__container, .grid__full-width .content__about__container, .grid__full-width .content__features__container, .grid__full-width .content__pricing__container, .grid__full-width .content__intro-network__container, .grid__full-width .content__testimonials__container, .grid__full-width .footer__container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .grid__full-width .header__container__slide-bar {
+    display: block;
+  }
+  .grid__full-width .header__container__slide-bar__logo {
+    display: flex;
+    align-items: center;
+  }
+  .grid__full-width .header__container__slide-bar__logo__icon {
+    width: 50px;
+    height: 50px;
+  }
+  .grid__full-width .header__container__slide-bar__logo__name {
+    width: 144px;
+    font-size: 3rem;
+  }
+  .grid__full-width .header__container__slide-bar__logo__name__name-right {
+    left: 84px;
+  }
+  .grid__full-width .header__container__slide-bar__content {
+    width: 70%;
+    height: 3em;
+    margin: 20px auto;
+    display: none;
+  }
+  .grid__full-width .header__container__slide-bar__authentication {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .grid__full-width .header__container__slide-bar__authentication__group-btn {
+    margin: 0 auto;
+  }
+  .grid__full-width .header__container__slide-bar__authentication__group-btn__sign-in {
+    border: 2px solid #F53855;
+    border-radius: 50px;
+    color: #F53838;
+  }
+  .grid__full-width .header__container__slide-bar__authentication__menu-bars {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 2px solid #F53855;
+    border-radius: 10px;
+    right: 0;
+  }
+  .grid__full-width .header__container__slide-bar__authentication__menu-bars__icon {
+    font-size: 2.8rem;
+    color: #4F5665;
+  }
+  .grid__full-width .header__container__slide-bar__authentication__menu-bars:hover {
+    background-color: #F53838;
+  }
+  .grid__full-width .header__container__slide-bar__authentication__menu-bars:hover > i {
+    color: #ffffff;
+  }
+  .grid__full-width .content__about__container__top-container {
+    margin-top: 100px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+  }
+  .grid__full-width .content__about__container__top-container__left-container {
+    margin: 0;
+  }
+  .grid__full-width .content__about__container__top-container__left-container__title {
+    font-size: 2.8rem;
+    line-height: 3rem;
+  }
+  .grid__full-width .content__about__container__top-container__left-container__title__vpn-title {
+    left: -10px;
+  }
+  .grid__full-width .content__about__container__top-container__left-container__describe {
+    margin-top: 20px;
+    line-height: 2.5rem;
+  }
+  .grid__full-width .content__about__container__top-container__left-container__img {
+    width: 90%;
+    margin-top: 60px;
+  }
+  .grid__full-width .content__about__container__bot-container {
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;
+    height: unset;
+  }
+  .grid__full-width .content__about__container__bot-container::before {
+    content: none;
+  }
+  .grid__full-width .content__about__container__bot-container::after {
+    content: none;
+  }
+  .grid__full-width .content__features__container {
+    margin-top: 60px;
+    display: block;
+  }
+  .grid__full-width .content__features__container__img {
+    width: 100%;
+    margin-right: 0;
+    height: unset;
+  }
+  .grid__full-width .content__features__container__sub-container {
+    margin-top: 50px;
+  }
+  .grid__full-width .content__features__container__sub-container__title {
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  .grid__full-width .content__features__container__sub-container__describe {
+    width: 100%;
+    line-height: 2rem;
+    margin: 20px 0;
+  }
+  .grid__full-width .content__features__container__sub-container__group {
+    justify-content: center;
+  }
+  .grid__full-width .content__features__container__sub-container__group__feature-name {
+    width: 170px;
+  }
+  .grid__full-width .content__pricing__container__describe {
+    width: 100%;
+  }
+  .grid__full-width .content__pricing__container__sub-container {
+    display: block;
+    margin-top: 50px;
+  }
+  .grid__full-width .content__pricing__container__sub-container__item {
+    width: 90%;
+    height: unset;
+    margin-top: 20px;
+  }
+  .grid__full-width .content__pricing__container__sub-container__item__img {
+    margin-top: 10px;
+  }
+  .grid__full-width .content__pricing__container__sub-container__item__group-features {
+    margin: 20px 0;
+    height: unset;
+  }
+  .grid__full-width .content__pricing__container__sub-container__item__group-features__feature-item {
+    width: 185px;
+    margin: 0 auto;
+  }
+  .grid__full-width .content__pricing__container__sub-container__item__group-features__feature-item__icon {
+    margin-left: unset;
+  }
+  .grid__full-width .content__intro-network__container__title {
+    width: 100%;
+    margin-top: 100px;
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    height: unset;
+  }
+  .grid__full-width .content__intro-network__container__describe {
+    width: 100%;
+  }
+  .grid__full-width .content__intro-network__container__img {
+    width: 100%;
+    height: unset;
+    margin: 60px 0;
+  }
+  .grid__full-width .content__intro-network__container__container-internet {
+    width: 100%;
+    height: unset;
+    flex-wrap: wrap;
+    margin-top: 0;
+    justify-content: unset;
+  }
+  .grid__full-width .content__intro-network__container__container-internet__item-netflix {
+    width: 30%;
+    margin-right: 10px;
+  }
+  .grid__full-width .content__intro-network__container__container-internet__item-reddit {
+    width: 30%;
+    padding: 0;
+  }
+  .grid__full-width .content__intro-network__container__container-internet__item-amazon {
+    width: 35%;
+    padding: 0;
+  }
+  .grid__full-width .content__intro-network__container__container-internet__item-discord {
+    width: 40%;
+    margin-right: 10px;
+  }
+  .grid__full-width .content__intro-network__container__container-internet__item-spontify {
+    width: 40%;
+    padding: 0;
+  }
+  .grid__full-width .content__testimonials__container__title {
+    width: 100%;
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    height: unset;
+  }
+  .grid__full-width .content__testimonials__container__describe {
+    width: 100%;
+    line-height: 2.5rem;
+    height: unset;
+  }
+  .grid__full-width .content__testimonials__container__slider {
+    width: 100%;
+  }
+  .grid__full-width .content__testimonials__container__slider__content__item {
+    width: 100%;
+    margin-right: 20px;
+  }
+  .grid__full-width .content__testimonials__container__slider__content__item__top {
+    margin: 0;
+  }
+  .grid__full-width .content__testimonials__container__slider__content__item__top__info {
+    margin-right: 10px;
+  }
+  .grid__full-width .content__testimonials__container__slider__content__item__top__info__avt {
+    margin-left: 5px;
+  }
+  .grid__full-width .content__testimonials__container__slider__content__item__top__info__name-address__name {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    margin-top: 5px;
+  }
+  .grid__full-width .content__testimonials__container__slider__content__item__top__info__name-address__address {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    margin-top: 5px;
+  }
+  .grid__full-width .content__testimonials__container__slider__content__item__top__rating {
+    padding-right: 5px;
+  }
+  .grid__full-width .content__testimonials__container__slider__content__item__comment {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    width: 90%;
+    height: unset;
+    margin: 30px 20px 10px 10px;
+  }
+  .grid__full-width .content__testimonials__container__slider__control {
+    margin-top: 40px;
+  }
+  .grid__full-width .content__testimonials__container__slider__control__group-btn {
+    width: 90px;
+  }
+  .grid__full-width .content__testimonials__container__slider__control__group-btn__btn-go-back {
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+  }
+  .grid__full-width .content__testimonials__container__slider__control__group-btn__btn-forward {
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+  }
+  .grid__full-width .footer__container {
+    margin-top: 90px;
+    padding-top: 130px;
+  }
+  .grid__full-width .footer__container__left {
+    width: 50%;
+  }
+  .grid__full-width .footer__container__left__logo__icon {
+    width: 30px;
+    height: 30px;
+  }
+  .grid__full-width .footer__container__left__logo__first-name {
+    font-size: 1.4rem;
+  }
+  .grid__full-width .footer__container__left__logo__last-name {
+    font-size: 1.3rem;
+  }
+  .grid__full-width .footer__container__left__describe {
+    width: 90%;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+  .grid__full-width .footer__container__left__describe__first-des, .grid__full-width .footer__container__left__describe__last-des {
+    font-size: 1.2em;
+    line-height: 1.8rem;
+  }
+  .grid__full-width .footer__container__left__social-network {
+    width: 80%;
+    margin-top: 15px;
+  }
+  .grid__full-width .footer__container__left__social-network__btn {
+    width: 35px;
+    height: 35px;
+    margin-right: 6px;
+  }
+  .grid__full-width .footer__container__right {
+    flex-wrap: wrap;
+    width: 50%;
+  }
+  .grid__full-width .footer__container__right__product, .grid__full-width .footer__container__right__engage, .grid__full-width .footer__container__right__earn-money {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .grid__full-width .footer__container__right__product__item, .grid__full-width .footer__container__right__engage__item, .grid__full-width .footer__container__right__earn-money__item {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .grid__full-width .notify-subscribe {
+    right: -20px;
+    width: 320px;
+    display: block;
+    text-align: center;
+    height: 180px;
+    animation: showNotify 2s;
+  }
+  .grid__full-width .notify-subscribe__left-container {
+    margin-left: 10px;
+    width: 320px;
+    height: 80px;
+  }
+  .grid__full-width .notify-subscribe__left-container__title {
+    width: unset;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    text-align: center;
+  }
+  .grid__full-width .notify-subscribe__left-container__describe {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .grid__full-width .notify-subscribe__btn {
+    width: 170px;
+    margin: 0;
+  }
+  .grid__full-width .notify-subscribe__btn:hover::before {
+    position: absolute;
+    content: "";
+    width: 140px;
+    height: 15px;
+    left: 12px;
+    bottom: -1px;
+    box-shadow: 0px 30px 25px #FCC8C8;
+  }
+  @keyframes showNotify {
+    from {
+      bottom: 680px;
+      right: -150px;
+    }
+    to {
+      bottom: 680px;
+      right: -20px;
+    }
+  }
+}
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  .grid__full-width .header__container, .grid__full-width .content__about__container, .grid__full-width .content__features__container, .grid__full-width .content__pricing__container, .grid__full-width .content__intro-network__container, .grid__full-width .content__testimonials__container, .grid__full-width .footer__container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .grid__full-width .header__container__slide-bar {
+    display: block;
+  }
+  .grid__full-width .header__container__slide-bar__logo {
+    display: flex;
+    align-items: center;
+  }
+  .grid__full-width .header__container__slide-bar__logo__icon {
+    width: 70px;
+    height: 70px;
+  }
+  .grid__full-width .header__container__slide-bar__logo__name {
+    width: 210px;
+    font-size: 4rem;
+  }
+  .grid__full-width .header__container__slide-bar__logo__name__name-right {
+    left: 112px;
+  }
+  .grid__full-width .header__container__slide-bar__content {
+    width: 70%;
+    height: 3em;
+    margin: 20px auto;
+  }
+  .grid__full-width .header__container__slide-bar__authentication {
+    margin: 10px auto;
+  }
+  .grid__full-width .content__about__container__top-container {
+    display: block;
+    margin-top: 230px;
+    text-align: center;
+  }
+  .grid__full-width .content__about__container__top-container__left-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .grid__full-width .content__about__container__top-container__left-container__describe {
+    margin-top: 20px;
+  }
+  .grid__full-width .content__about__container__top-container__left-container__btn {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .grid__full-width .content__about__container__top-container__left-container__img {
+    margin-top: 20px;
+  }
+  .grid__full-width .content__about__container__bot-container {
+    width: 100%;
+    height: 105px;
+    margin-top: 60px;
+    position: relative;
+    align-items: center;
+    box-shadow: 0 25px 15px #f4f4f5;
+  }
+  .grid__full-width .content__about__container__bot-container::before {
+    position: absolute;
+    left: 30%;
+    bottom: 10px;
+    height: 80px;
+  }
+  .grid__full-width .content__about__container__bot-container::after {
+    position: absolute;
+    left: 65%;
+    bottom: 10px;
+    height: 80px;
+  }
+  .grid__full-width .content__about__container__bot-container__group-item--mid {
+    position: relative;
+    left: -14px;
+  }
+  .grid__full-width .content__features__container {
+    margin-top: 90px;
+    margin-bottom: 60px;
+    justify-content: space-around;
+  }
+  .grid__full-width .content__features__container__img {
+    width: 35%;
+    height: 326px;
+    margin-right: 5px;
+  }
+  .grid__full-width .content__features__container__sub-container {
+    width: 45%;
+    margin-top: 0;
+  }
+  .grid__full-width .content__features__container__sub-container__title {
+    width: 90%;
+  }
+  .grid__full-width .content__features__container__sub-container__describe {
+    width: 90%;
+  }
+  .grid__full-width .content__pricing__container__sub-container__item {
+    width: 190px;
+    height: 680px;
+  }
+  .grid__full-width .content__pricing__container__sub-container__item__img {
+    margin-top: 20px;
+  }
+  .grid__full-width .content__pricing__container__sub-container__item__group-features__feature-item__icon {
+    margin-right: 5px;
+    margin-left: 2px;
+  }
+  .grid__full-width .content__pricing__container__sub-container__item__btn {
+    width: 100px;
+    padding: 0;
+    font-size: 1.5rem;
+    margin: 20px auto;
+  }
+  .grid__full-width .content__pricing__container__sub-container__item__btn:hover {
+    cursor: pointer;
+    background-color: #F53838;
+    color: #FFFFFF;
+  }
+  .grid__full-width .content__pricing__container__sub-container__item__btn:hover::before {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 15px;
+    left: 12px;
+    bottom: -1px;
+    box-shadow: 0px 20px 20px #FCC8C8;
+  }
+  .grid__full-width .content__intro-network__container__img {
+    margin-top: 50px;
+    width: 90%;
+    height: 400px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .grid__full-width .content__intro-network__container__container-internet {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .grid__full-width .content__intro-network__container__container-internet__item-netflix {
+    width: 100px;
+    height: 74px;
+  }
+  .grid__full-width .content__intro-network__container__container-internet__item-amazon {
+    width: 144px;
+    height: 150px;
+    padding: 0;
+  }
+  .grid__full-width .content__intro-network__container__container-internet__item-discord {
+    width: 150px;
+    height: 60px;
+  }
+  .grid__full-width .content__intro-network__container__container-internet__item-spontify {
+    width: 135px;
+    height: 40px;
+    padding: 0;
+  }
+  .grid__full-width .content__intro-network__container__container-internet__item-reddit {
+    width: 130px;
+    height: 40px;
+    padding: 0;
+  }
+  .grid__full-width .content__testimonials__container__title {
+    margin-top: 30px;
+  }
+  .grid__full-width .content__testimonials__container__slider {
+    width: 100%;
+  }
+  .grid__full-width .footer__container__left__describe {
+    width: 300px;
+  }
+  .grid__full-width .notify-subscribe {
+    width: 700px;
+    right: -40px;
+    animation: showNotify 2s;
+  }
+  .grid__full-width .notify-subscribe__left-container {
+    margin-left: 15px;
+  }
+  .grid__full-width .notify-subscribe__btn {
+    margin-right: 15px;
+  }
+  @keyframes showNotify {
+    from {
+      bottom: 680px;
+      right: -450px;
+    }
+    to {
+      bottom: 680px;
+      right: -40px;
+    }
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

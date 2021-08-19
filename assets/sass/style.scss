@@ -37,8 +37,8 @@
                         }
                         &__name-right {
                             font-weight: 700;
-                            position: relative;
-                            left: -6px;
+                            position: absolute;
+                            left: 56px;
                         }
                     }
                     &:hover {
@@ -72,36 +72,44 @@
                     display: flex;
                     align-content: center;
                     
-                    &__sign-in,
-                    &__sign-up {
-                        font-size: 1.6rem;
-                        font-weight: 600;
-                        background-color: transparent;
-                    }
-                    &__sign-in {
-                        border: none;
-                        padding: 13px 30px;
-                        
-                        &:hover {
-                            border: 2px solid $btn-border-color;
+                    &__group-btn {
+                        display: flex;
+                        &__sign-in,
+                        &__sign-up {
+                            font-size: 1.6rem;
+                            font-weight: 600;
+                            background-color: transparent;
+                        }
+                        &__sign-in {
+                            border: none;
+                            padding: 13px 20px;
+                            margin-right: 10px;
+                            border: 2px solid transparent;
                             border-radius: 50px;
-                            cursor: pointer;
-                            background-color: $primary-color;
-                            color: #FFFFFF;
-                            //transform: 
+                            &:hover {
+                                border-color: $btn-border-color;
+                                cursor: pointer;
+                                background-color: $primary-color;
+                                color: #FFFFFF;
+                                //transform: 
+                            }
+                        }
+                        &__sign-up {
+                        border: 2px solid $btn-border-color;
+                        padding: 13px 45px;
+                        border-radius: 50px;
+                        color: $btn-border-color;
+
+                        &:hover {
+                                cursor: pointer;
+                                background-color: $primary-color;
+                                color: #FFFFFF;
+                            }
                         }
                     }
-                    &__sign-up {
-                    border: 2px solid $btn-border-color;
-                    padding: 13px 45px;
-                    border-radius: 50px;
-                    color: $btn-border-color;
 
-                    &:hover {
-                            cursor: pointer;
-                            background-color: $primary-color;
-                            color: #FFFFFF;
-                        }
+                    &__menu-bars {
+                        display: none;
                     }
                 }
             }
@@ -128,6 +136,7 @@
                             }
                             &__lasles-title {
                                 font-weight: 700 ;
+                                position: relative;
                             }
                             &__vpn-title {
                                 font-weight: 800;
@@ -838,3 +847,671 @@
 
 }
 
+
+// mobile: width < 740px 
+
+@media only screen and (max-width: 46.1875em) {
+    .grid__full-width {
+        .header, .content__about, .content__features, .content__pricing, .content__intro-network, .content__testimonials, .footer {
+            &__container {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+        }
+        .header {
+            &__container {
+                &__slide-bar {
+                    display: block;
+                    
+                    &__logo {
+                        display: flex;
+                        align-items: center;
+                        &__icon {
+                            $size : 50px;
+                            width: $size;
+                            height: $size;
+                        }
+                        &__name {
+                            width: 144px;
+                            font-size: 3rem;
+                            &__name-right {
+                                left: 84px;
+                            }
+                        }
+                    }
+                    &__content {
+                        width: 70%;
+                        height: 3em;
+                        margin: 20px auto;
+                        display: none;
+                    }
+                    &__authentication {
+                        width: 100%;
+                        margin: 20px auto;
+
+                        &__group-btn {
+                            margin: 0 auto;
+                            &__sign-in {
+                                border: 2px solid $btn-border-color;
+                                border-radius: 50px;
+                                color: $primary-color;
+                            }
+                        }
+                        
+                        &__menu-bars {
+                            display: block;
+                            $size : 50px;
+                            width: $size;
+                            height: $size;
+                            background-color: #ffffff;
+                            border: 2px solid $btn-border-color;
+                            border-radius: 10px;
+                            right: 0;
+
+                            &__icon {
+                                font-size: 2.8rem;
+                                color: $text-color;
+                            }
+                            &:hover {
+                                background-color: $primary-color;
+                                & > i {
+                                    color: #ffffff;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .content {
+            &__about {
+                &__container {
+                    
+                    &__top-container {
+                        margin-top: 100px;
+                        display: block;
+                        text-align: center;
+                        justify-content: center;
+                        &__left-container {
+                            margin: 0;
+                            &__title {
+                                font-size: 2.8rem;
+                                line-height: 3rem;
+                                &__vpn-title {
+                                    left: -10px;
+                                }
+                            }
+                            &__describe {
+                                margin-top: 20px;
+                                line-height: 2.5rem;
+                            }
+                            &__img {
+                                width: 90%;
+                                margin-top: 60px;
+                            }
+                        }
+                    }
+                    &__bot-container {
+                        flex-wrap: wrap;
+                        width: 100%;
+                        margin-top: 50px;
+                        height: unset;
+                        &::before {
+                            content: none;
+                        }
+                        &::after {
+                            content: none;
+                        }
+                    }
+                }
+            }
+            &__features {
+                &__container {
+                    margin-top: 60px;
+                    display: block;
+                    &__img {
+                        width: 100%;
+                        margin-right: 0;
+                        height: unset;
+                    }
+                    &__sub-container {
+                        margin-top: 50px;
+                        &__title {
+                            width: 100%;
+                            font-size: 1.8rem;
+                            line-height: 2rem;
+                        }
+                        &__describe {
+                            width: 100%;
+                            line-height: 2rem;
+                            margin: 20px 0;
+                        }
+                        &__group {
+                            justify-content: center;
+                            &__feature-name {
+                                width: 170px;
+                            }
+                        }
+                    }
+                }
+            }
+            &__pricing {
+                &__container {
+                    
+                    &__describe {
+                        width: 100%;
+                    }
+                    &__sub-container {
+                        display: block;
+                        margin-top: 50px;
+                        &__item {
+                            width: 90%;
+                            height: unset;
+                            margin-top: 20px;
+                            &__img {
+                                margin-top: 10px;
+                            }
+                            &__name {
+
+                            }
+                            &__group-features {
+                                margin: 20px 0;
+                                height: unset;
+                                &__feature-item {
+                                    width: 185px;
+                                    margin: 0 auto;
+                                    &__icon {
+                                        margin-left: unset;
+                                    }
+                                    &__name {
+
+                                    }
+                                }
+                            }
+                            &__cost {
+
+                            }
+                            &__btn {
+
+                            }
+                        }
+                    }
+                }
+            }
+            &__intro-network {
+                &__container {
+                    &__title {
+                        width: 100%;
+                        margin-top: 100px;
+                        font-size: 2.5rem;
+                        line-height: 2.8rem;
+                        height: unset;
+                    }
+                    &__describe {
+                        width: 100%;
+                    }
+                    &__img {
+                        width: 100%;
+                        height: unset;
+                        margin: 60px 0;
+                    }
+                    &__container-internet {
+                        width: 100%;
+                        height: unset;
+                        flex-wrap: wrap;
+                        margin-top: 0;
+                        // justify-content: center;
+                        justify-content: unset ;
+                        &__item-netflix {
+                            width: 30%;
+                            margin-right: 10px;
+                        }
+                        &__item-reddit {
+                            width: 30%;
+                            padding: 0;
+                        }
+                        &__item-amazon {
+                            width: 35%;
+                            padding: 0;
+                        }
+                        &__item-discord {
+                            width: 40%;
+                            margin-right: 10px;
+                        }
+                        &__item-spontify {
+                            width: 40%;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+            &__testimonials {
+                &__container {
+                    &__title {
+                        width: 100%;
+                        font-size: 2.5rem;
+                        line-height: 2.8rem;
+                        height: unset;
+                    }
+                    &__describe {
+                        width: 100%;
+                        line-height: 2.5rem;
+                        height: unset;
+                    }
+                    &__slider {
+                        width: 100%;
+                        &__content {
+                            &__item {
+                                &__top {
+                                    margin: 0;
+                                    &__info {
+                                        margin-right: 10px;
+                                        &__avt {
+                                            margin-left: 5px;
+                                        }
+                                        &__name-address {
+                                            
+                                            &__name {
+                                                font-size: 1.6rem;
+                                                line-height: 1.8rem;
+                                                margin-top: 5px;
+                                            }
+                                            &__address {
+                                                font-size: 1.4rem;
+                                                line-height: 1.6rem;
+                                                margin-top: 5px;
+                                            }
+                                        }
+                                    }
+                                    &__rating {
+                                        padding-right: 5px;
+                                    }
+                                }
+                                width: 100%;
+                                margin-right: 20px;
+                                &__comment {
+                                    font-size: 1.2rem;
+                                    line-height: 1.6rem;
+                                    width: 90%;
+                                    height: unset;
+                                    margin: 30px 20px 10px 10px;
+                                }
+                            }
+                        }
+                        &__control {
+                            margin-top: 40px;
+                            &__group-btn {
+                                width: 90px;
+                                $size : 40px;
+                                &__btn-go-back {
+                                    width: $size;
+                                    height: $size;
+                                    font-size: 2rem;
+                                }
+                                &__btn-forward {
+                                    width: $size;
+                                    height: $size;
+                                    font-size: 2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+           &__container {
+                margin-top: 90px;
+                padding-top: 130px;
+                &__left {
+                    width: 50%;
+                    &__logo {
+                        
+                        &__icon {
+                            width: 30px;
+                            height: 30px;
+                        }
+                        &__first-name {
+                            font-size: 1.4rem;
+                        }
+                        &__last-name {
+                            font-size: 1.3rem;
+                            
+                        }
+                    }
+                    &__describe {
+                        width: 90%;
+                        font-size: 1.2rem;
+                        line-height: 1.4rem;
+
+                        &__first-des,
+                        &__last-des {
+                            font-size: 1.2em;
+                            line-height: 1.8rem;
+                        }
+                    }
+                    &__social-network {
+                        width: 80%;
+                        margin-top: 15px;
+                        $size : 35px;
+                        &__btn {
+                            width: $size;
+                            height: $size;
+                            margin-right: 6px;
+                        }
+                    }
+                }
+                &__right {
+                    flex-wrap: wrap;
+                    width: 50%;
+                    &__product, &__engage, &__earn-money {
+                        font-size: 1.2rem;
+                        line-height: 1.8rem;
+
+                        &__item {
+                            font-size: 1.2rem;
+                            line-height: 1.8rem;
+                        }
+                    }
+                    
+                }
+           }
+        }
+        .notify-subscribe {
+            right: -20px;
+            width: 320px;
+            display: block;
+            text-align: center;
+            height: 180px;
+            animation: showNotify 2s;
+
+            &__left-container {
+                margin-left: 10px;
+                width: 320px;
+                height: 80px;
+                &__title {
+                    width: unset;
+                    font-size: 1.6rem;
+                    line-height: 1.8rem;
+                    text-align: center;
+                }
+                &__describe {
+                    font-size: 1.4rem;
+                    line-height: 1.8rem;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+            }
+            &__btn {
+                width: 170px;
+                margin: 0;
+
+                &:hover {
+                    @include hoverBtn(140px, 15px, 12px, -1px, 0px, 30px, 25px, $btn-shadow);
+                }
+             
+            }
+
+            @keyframes showNotify {
+                from {
+                    bottom: 680px;
+                    right: -150px;
+                }
+                to {
+                    bottom: 680px;
+                    right: -20px;
+                }
+            }
+        }
+    }
+}   
+
+
+
+// tablet: width >= 740px and width <= 1024px
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .grid__full-width {
+        .header, .content__about, .content__features, .content__pricing, .content__intro-network, .content__testimonials, .footer {
+            &__container {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+        }
+        .header {
+            &__container {
+                &__slide-bar {
+                    display: block;
+                    &__logo {
+                        display: flex;
+                        align-items: center;
+                        &__icon {
+                            width: 70px;
+                            height: 70px;
+                        }
+                        &__name {
+                            width: 210px;
+                            font-size: 4rem;
+                            &__name-right {
+                                left: 112px;
+                            }
+                        }
+                    }
+                    &__content {
+                        width: 70%;
+                        height: 3em;
+                        margin: 20px auto;
+                    }
+                    &__authentication {
+                        margin: 10px auto;
+                        
+                    }
+                }
+            }
+        }
+        .content {
+            &__about {
+                &__container {
+                    &__top-container {
+                        display: block;
+                        margin-top: 230px;
+                        text-align: center; 
+                        &__left-container {
+                            width: 80%;
+                            margin: 0 auto;
+                            &__describe {
+                                margin-top: 20px;
+                            }
+                            &__btn {
+                                margin-top: 30px;
+                                margin-bottom: 40px;
+                            }
+                            &__img {
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+
+                    &__bot-container {
+                        width: 100%;
+                        height: 105px;
+                        margin-top: 60px;
+                        position: relative;
+                        align-items: center;
+                        box-shadow: 0 25px 15px #f4f4f5;
+                        &::before {
+                            position: absolute;
+                            left: 30%;
+                            bottom: 10px;
+                            height: 80px;
+                        }
+
+                        &::after {
+                            position: absolute;
+                            left: 65%;
+                            bottom: 10px;
+                            height: 80px;
+                        }
+                        &__group-item {
+                            &--mid {
+                                position: relative;
+                                left: -14px;
+                            }
+                        }
+                    }
+                }
+            }
+            &__features {
+                &__container {
+                    margin-top: 90px;
+                    margin-bottom: 60px;
+                    justify-content: space-around;
+                    &__img {
+                        width: 35%;
+                        height: 326px;
+                        margin-right: 5px;
+                    }
+                    &__sub-container {
+                        width: 45%;
+                        margin-top: 0;
+                        &__title {
+                            width: 90%;
+                        }
+                        &__describe {
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+            &__pricing {
+                &__container {
+                    &__sub-container {
+                        &__item {
+                            width: 190px;
+                            height: 680px;
+                            &__img {
+                                margin-top: 20px;
+                            }
+                            &__group-features {
+                                &__feature-item {
+                                    &__icon {
+                                        margin-right: 5px;
+                                        margin-left: 2px;
+                                    }
+                                    
+                                }
+                            }
+                            &__btn {
+                                width: 100px;
+                                padding: 0;
+                                font-size: 1.5rem;
+                                margin: 20px auto;
+                                &:hover {
+                                    cursor: pointer;
+                                    background-color: $primary-color;
+                                    color: #FFFFFF;
+                                    @include hoverBtn(70px, 15px, 12px, -1px, 0px, 20px, 20px, $btn-shadow);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &__intro-network {
+                &__container {
+                    &__img {
+                        
+                        margin-top: 50px;
+                        width: 90%;
+                        height: 400px;
+                        
+                        margin-left: 5%;
+                        margin-right: 5%;
+                    }
+
+                    &__container-internet {
+                        width: 100%;
+                        margin-top: 30px;
+                        &__item-netflix {
+                            width: 100px;
+                            height: 74px;
+                        }
+
+                        &__item-amazon {
+                            width: 144px;
+                            height: 150px;
+                            padding: 0;
+                        }
+
+                        &__item-discord {
+                            width: 150px;
+                            height: 60px;
+                        }
+
+                        &__item-spontify {
+                            width: 135px;
+                            height: 40px;
+                            padding: 0;
+                        }
+
+                        &__item-reddit {
+                            width: 130px;
+                            height: 40px;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+            &__testimonials {
+                &__container {
+                    &__title {
+                        margin-top: 30px;
+                    }
+                    &__describe {
+
+                    }
+                    &__slider {
+                        width: 100%;
+                        &__control {
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+           &__container {
+               &__left {
+                   &__describe {
+                       width: 300px;
+                   }
+               }
+           }
+        }
+
+        .notify-subscribe {
+            width: 700px;
+            right: -40px;
+            animation: showNotify 2s;
+            &__left-container {
+                margin-left: 15px;
+            }
+            &__btn {
+                margin-right: 15px;
+                
+
+                @keyframes showNotify {
+                    from {
+                        bottom: 680px;
+                        right: -450px;
+                    }
+                    to {
+                        bottom: 680px;
+                        right: -40px;
+                    }
+                }
+            }
+        }
+    }
+}
