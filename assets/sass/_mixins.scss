@@ -9,3 +9,17 @@
         box-shadow: $shadow-v1 $shadow-v2 $shadow-v3 $shadow-v4;    
     }
 }
+
+@mixin showMenubar {
+    &::before {
+        position: absolute;
+        content: "";
+        width: 200px;
+        height: 250px;
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        right: -2px;
+        top: 50px;
+        z-index: 2;
+    }
+}

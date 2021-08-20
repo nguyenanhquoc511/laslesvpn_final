@@ -811,6 +811,7 @@
     border: 2px solid #F53855;
     border-radius: 10px;
     right: 0;
+    position: relative;
   }
   .grid__full-width .header__container__slide-bar__authentication__menu-bars__icon {
     font-size: 2.8rem;
@@ -821,6 +822,49 @@
   }
   .grid__full-width .header__container__slide-bar__authentication__menu-bars:hover > i {
     color: #ffffff;
+  }
+  .grid__full-width .header__container__slide-bar__authentication__menu-bars:hover::before {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 250px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    right: -2px;
+    top: 50px;
+    z-index: 2;
+  }
+  .grid__full-width .header__container__slide-bar__authentication__menu-bars:hover > div {
+    display: block;
+  }
+  .grid__full-width .header__container__slide-bar__authentication__menu-bars:hover ~ div {
+    display: block;
+  }
+  .grid__full-width .header__container__slide-bar__authentication__menu-bars__content {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 200px;
+    height: 250px;
+    z-index: 3;
+    display: none;
+  }
+  .grid__full-width .header__container__slide-bar__authentication__menu-bars__content__about, .grid__full-width .header__container__slide-bar__authentication__menu-bars__content__pricing, .grid__full-width .header__container__slide-bar__authentication__menu-bars__content__testimonials, .grid__full-width .header__container__slide-bar__authentication__menu-bars__content__features, .grid__full-width .header__container__slide-bar__authentication__menu-bars__content__help {
+    width: 100%;
+    height: 20px;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-top: 20px;
+  }
+  .grid__full-width .header__container__slide-bar__authentication__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    display: none;
   }
   .grid__full-width .content__about__container__top-container {
     margin-top: 100px;
@@ -896,6 +940,7 @@
   .grid__full-width .content__pricing__container__sub-container__item {
     width: 90%;
     height: unset;
+    margin: 0 5%;
     margin-top: 20px;
   }
   .grid__full-width .content__pricing__container__sub-container__item__img {
